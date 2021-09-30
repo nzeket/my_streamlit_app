@@ -124,7 +124,7 @@ elif mon_choix == "uber-raw-data-apr14":
 # LOADING DATA
     DATE_TIME = "date/time"
     DATA_URL = (
-        "C:/Users/Aicha Nzeket/Desktop/M1 EFREI/Dataviz/uber-raw-data-apr14.csv"
+        "uber-raw-data-apr14.csv"
     )
 
     @st.cache(persist=True)
