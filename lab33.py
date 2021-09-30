@@ -17,8 +17,8 @@ st.sidebar.markdown("# :chart_with_upwards_trend:")
 # Add app title
 st.sidebar.title("Visualization App")
 #naming the datasets
-ny = pd.read_csv("C:/Users/Aicha Nzeket/Desktop/M1 EFREI/Dataviz/ny-trips-data.csv")
-uber = pd.read_csv("C:/Users/Aicha Nzeket/Desktop/M1 EFREI/Dataviz/uber-raw-data-apr14.csv")
+ny = pd.read_csv("ny-trips-data.csv")
+uber = pd.read_csv("uber-raw-data-apr14.csv")
 
 # LOADING DATA
 uber['Date/Time'] = uber['Date/Time'].map(pd.to_datetime)
