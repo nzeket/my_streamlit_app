@@ -24,7 +24,7 @@ uber = pd.read_csv("uber-raw-data-apr14.csv")
 uber['Date/Time'] = uber['Date/Time'].map(pd.to_datetime)
 DATE_TIME = "date/time"
 DATA_URL = (
-    "C:/Users/Aicha Nzeket/Desktop/M1 EFREI/Dataviz/uber-raw-data-apr14.csv "
+    "uber-raw-data-apr14.csv "
 )
 
 st.header('NY Trips Dashboards')
@@ -42,7 +42,7 @@ time.sleep(0.1)
 #uploading the uber dataset
 @st.cache
 def load_data1():
-    uber = pd.read_csv("C:/Users/Aicha Nzeket/Desktop/M1 EFREI/Dataviz/uber-raw-data-apr14.csv")
+    uber = pd.read_csv("uber-raw-data-apr14.csv")
     #Convert date/time column type from object to datetime
     uber['Date/Time'] = pd.to_datetime(uber['Date/Time'])
     lowercase = lambda x: str(x).lower()
@@ -52,7 +52,7 @@ df = load_data1()
 
 @st.cache
 def load_data(): 
-    ny = pd.read_csv("C:/Users/Aicha Nzeket/Desktop/M1 EFREI/Dataviz/ny-trips-data.csv")
+    ny = pd.read_csv("ny-trips-data.csv")
     return ny
 df = load_data()
 
